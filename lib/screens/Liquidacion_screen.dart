@@ -69,7 +69,6 @@ class _LiquidacionScreenState extends State<LiquidacionScreen> {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-            
             children: [
               const Text(
                 'Inserte los Códigos',
