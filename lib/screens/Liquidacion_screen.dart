@@ -69,7 +69,7 @@ class _LiquidacionScreenState extends State<LiquidacionScreen> {
         padding: const EdgeInsets.all(16.0),
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            
             children: [
               const Text(
                 'Inserte los Códigos',
@@ -145,17 +145,21 @@ class _LiquidacionScreenState extends State<LiquidacionScreen> {
                           ),
                         );
                       },
-                      child: const Text('Comparar', style: TextStyle(fontSize: 18, color: Colors.white)),
                       style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
                         backgroundColor: Colors.deepPurple,
                         foregroundColor: Colors.white,
                       ),
+                      child: const Text('Comparar', style: TextStyle(fontSize: 18, color: Colors.white)),
                     ),
                   ],
                 ),
               ),
               const SizedBox(height: 30),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -171,6 +175,9 @@ class _LiquidacionScreenState extends State<LiquidacionScreen> {
               ),
               const SizedBox(height: 10),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -186,6 +193,9 @@ class _LiquidacionScreenState extends State<LiquidacionScreen> {
               ),
               const SizedBox(height: 10),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 30),
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -198,7 +208,9 @@ class _LiquidacionScreenState extends State<LiquidacionScreen> {
                   );
                 },
                 child: const Text('Continuar a Incidencia del Pasajero'),
+                
               ),
+              
             ],
           ),
         ),

@@ -63,7 +63,10 @@ class _AbordarScreenState extends State<AbordarScreen> {
           children: [
             ElevatedButton(
               onPressed: _abordar, 
-              child: const Text('Abordar'), 
+              child: const Text('Abordar'),
+              style: ElevatedButton.styleFrom(
+               padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 50), 
+              ),
             ),
             if (_capturedDate.isNotEmpty)
               Padding(
